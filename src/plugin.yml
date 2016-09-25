@@ -1,0 +1,20 @@
+main: fr.dragorn421.safewallet.SafeWalletPlugin
+name: SafeWallet
+version: 0.1
+author: Dragorn421
+commands:
+ getwallet:
+  usage: /getwallet
+  description: Get the wallet item.
+  permission: safewallet.getwallet
+ safewallet:
+  usage: /safewallet <reload | save | setwalletitem>
+  description: SafeWallet admin command.
+  permission: safewallet.safewallet
+permissions:
+ safewallet.usewallet:
+  default: true
+ safewallet.getwallet:
+  default: true
+ safewallet.safewallet:
+  default: op
